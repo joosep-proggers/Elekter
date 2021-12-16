@@ -11,3 +11,7 @@ body  {
     background: rgb(25,172,96);
     background: radial-gradient(circle, rgba(25,172,96,1) 0%, rgba(62,136,172,1) 87%);
 }
+.kaart {
+    background: rgb(2,0,36);
+    background: linear-gradient(32deg, rgba(2,0,36,1) 2%, rgba(9,118,31,1) 24%, rgba(9,125,36,1) 37%, rgba(9,121,31,1) 60%, rgba(0,255,184,1) 100%);
+}
