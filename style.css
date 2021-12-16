@@ -6,6 +6,8 @@ canvas {
     display: block;
     width: 800px;
 }
-language {
 
+body  {
+    background: rgb(25,172,96);
+    background: radial-gradient(circle, rgba(25,172,96,1) 0%, rgba(62,136,172,1) 87%);
 }
