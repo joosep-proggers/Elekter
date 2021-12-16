@@ -1,17 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="592f4fc4-1688-4b3d-bb35-30c010404d26" name="Changes" comment="Esimene vahehindamine">
-      <change afterPath="$PROJECT_DIR$/datagetter.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sample.js" afterDir="false" />
+    <list default="true" id="592f4fc4-1688-4b3d-bb35-30c010404d26" name="Changes" comment="Teine vahehindamine">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
-    <list id="ce6f47eb-5f90-46b3-9ef3-0a1dfe6aaa76" name="Changes by user" comment="">
+    <list id="ce6f47eb-5f90-46b3-9ef3-0a1dfe6aaa76" name="Changes by user" comment="Teine Vahehindamine">
       <change beforePath="$PROJECT_DIR$/chart.js" beforeDir="false" afterPath="$PROJECT_DIR$/chart.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,19 +32,6 @@
       <filtered-out-file-type name="TAG" />
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
-  </component>
-  <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/index.html">
-      <ranges>
-        <range start1="4" end1="5" start2="4" end2="5" changelist="ce6f47eb-5f90-46b3-9ef3-0a1dfe6aaa76" />
-        <range start1="12" end1="20" start2="12" end2="22" changelist="592f4fc4-1688-4b3d-bb35-30c010404d26" />
-        <range start1="21" end1="30" start2="23" end2="24" changelist="592f4fc4-1688-4b3d-bb35-30c010404d26" />
-        <range start1="31" end1="96" start2="25" end2="138" changelist="592f4fc4-1688-4b3d-bb35-30c010404d26" />
-        <range start1="97" end1="97" start2="139" end2="140" changelist="ce6f47eb-5f90-46b3-9ef3-0a1dfe6aaa76" />
-        <range start1="98" end1="98" start2="141" end2="143" changelist="592f4fc4-1688-4b3d-bb35-30c010404d26" />
-        <range start1="99" end1="101" start2="144" end2="144" changelist="592f4fc4-1688-4b3d-bb35-30c010404d26" />
-      </ranges>
-    </file>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -88,7 +70,7 @@
       <updated>1639581394946</updated>
       <workItem from="1639581401321" duration="2840000" />
       <workItem from="1639636866320" duration="15080000" />
-      <workItem from="1639654943890" duration="9208000" />
+      <workItem from="1639654943890" duration="9961000" />
     </task>
     <task id="LOCAL-00001" summary="Esimene vahehindamine">
       <created>1639655984906</created>
@@ -97,7 +79,21 @@
       <option name="project" value="LOCAL" />
       <updated>1639655984906</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Teine vahehindamine">
+      <created>1639670156001</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1639670156001</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Teine Vahehindamine">
+      <created>1639670162417</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1639670162417</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -116,6 +112,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Esimene vahehindamine" />
-    <option name="LAST_COMMIT_MESSAGE" value="Esimene vahehindamine" />
+    <MESSAGE value="Changes by user" />
+    <MESSAGE value="Teine vahehindamine" />
+    <MESSAGE value="Teine Vahehindamine" />
+    <option name="LAST_COMMIT_MESSAGE" value="Teine Vahehindamine" />
   </component>
 </project>
