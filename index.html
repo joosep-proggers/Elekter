@@ -10,94 +10,136 @@
   <meta name="theme-color" content="#fafafa">
   <link rel="stylesheet" href="style.css">
 </head>
-<body class="blue-grey darken-3 white-text">
+<body class="white white-text">
+<div class="row">
+  <div class="col s3 offset-s1 left-align">
+    <h1><b>0.137€/kWh</b></h1>
+    <h5>Elektrihind praegusel momendil</h5>
+  </div>
+  <div class="col s3 offset-s4 right-align">
+    <h1><b>0,016€/kWh</b></h1>
+    <h5>Kõige odavam elektrihind täna</h5>
+    <h5>Kell:</h5>
+  </div>
+</div>
+
+<div id="kodumasinad">
   <div class="row">
-    <div class="col s4 offset-s4 center-align">
-      <!--SIIA PEAB TULEMA HETKE TUNNIHIND-->
-      <h1>137.65 Eur/MWh</h1>
-      <hr>
-      <h5>Hetke momendi elektri hind</h5>
-    </div>
-  </div>
-
-  <ul class="collapsible">
-    <li>
-      <div class="collapsible-header">First</div>
-      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-    </li>
-  </ul>
-
-
-
-  <div id="kodumasinad">
-    <div class="row">
-      <!-- <div class="col s4">
-        <ul class="collapsible">
-          <li>
-            <div class="collapsible-header card blue-grey darken-1 z-depth-5">
-              <div class="card-content white-text">
-                <span class="card-title center-align">Boiler</span>
-                <div>
-                  <p>jes</p>
-                  <form action="#">
-                    <p class="range-field">
-                      <input type="range" id="test5" min="0" max="100" />
-                    </p>
-                  </form>
-                </div>
-              </div>
-            </div>
-            <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-          </li>
-        </ul>
-      </div> -->
-
-      <div class="col s4">
-        <ul class="collapsible">
-          <li>
-            <div class="collapsible-header">Boiler</div>
-            <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-          </li>
-        </ul>
-      </div>
-
-      <div class="col s4">
-        <div class="card blue-grey darken-1 z-depth-5">
-          <div class="card-content white-text">
-            <span class="card-title center-align">Radiaator</span>
-            <div>
-              <p>indeed</p>
-              <form action="#">
-                <p class="range-field">
-                  <input type="range" min="0" max="100" />
-                </p>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col s4">
-        <div class="card blue-grey darken-1 z-depth-5">
-          <div class="card-content white-text">
-            <span class="card-title center-align">Ventilaator</span>
-            <div>
-              <p>no</p>
-              <form action="#">
-                <p class="range-field">
-                  <input type="range" min="0" max="100" />
-                </p>
-              </form>
-            </div>
+    <div class="col s2">
+      <div class="card blue-grey darken-3 z-depth-5">
+        <div class="card-content white-text">
+          <span class="card-title center-align"><b>Ventilaator</b></span>
+          <div>
+            <form action="#">
+              <p>
+                <label for="Kestvus1">kestvusaeg (minutites)</label>
+                <input id="kestvus1" class="white-text"></input>
+                <button type="submit" class="btn">Arvuta!</button>
+              </p>
+            </form>
+            <br>
+            <p>Teie võit kokku: €</p>
           </div>
         </div>
       </div>
     </div>
+    <div class="col s2">
+      <div class="card blue-grey darken-3 z-depth-5">
+        <div class="card-content white-text">
+          <span class="card-title center-align"><b>Boiler</b></span>
+          <div>
+            <form action="#">
+              <p>
+                <label for="Kestvus2">kestvusaeg (minutites)</label>
+                <input id="kestvus2" class="white-text"></input>
+                <button type="submit" class="btn">Arvuta!</button>
+              </p>
+            </form>
+            <br>
+            <p>Teie võit kokku: €</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col s2">
+      <div class="card blue-grey darken-3 z-depth-5">
+        <div class="card-content white-text">
+          <span class="card-title center-align"><b>Radiaator</b></span>
+          <div>
+            <form action="#">
+              <p>
+                <label for="Kestvus3">kestvusaeg (minutites)</label>
+                <input id="kestvus3" class="white-text"></input>
+                <button type="submit" class="btn">Arvuta!</button>
+              </p>
+            </form>
+            <br>
+            <p>Teie võit kokku: €</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col s2">
+      <div class="card blue-grey darken-3 z-depth-5">
+        <div class="card-content white-text">
+          <span class="card-title center-align"><b>Veekeetja</b></span>
+          <div>
+            <form action="#">
+              <p>
+                <label for="Kestvus4">kestvusaeg (minutites)</label>
+                <input id="kestvus4" class="white-text"></input>
+                <button type="submit" class="btn">Arvuta!</button>
+              </p>
+            </form>
+            <br>
+            <p>Teie võit kokku: €</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col s2">
+      <div class="card blue-grey darken-3 z-depth-5">
+        <div class="card-content white-text">
+          <span class="card-title center-align"><b>Ahi</b></span>
+          <div>
+            <form action="#">
+              <p>
+                <label for="Kestvus5">kestvusaeg (minutites)</label>
+                <input id="kestvus5" class="white-text"></input>
+                <button type="submit" class="btn">Arvuta!</button>
+              </p>
+            </form>
+            <br>
+            <p>Teie võit kokku: €</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col s2">
+      <div class="card blue-grey darken-3 z-depth-5">
+        <div class="card-content white-text">
+          <span class="card-title center-align"><b>Pesumasin</b></span>
+          <div>
+            <form action="#">
+              <p>
+                <label for="Kestvus6">kestvusaeg (minutites)</label>
+                <input id="kestvus6" class="white-text"></input>
+                <button type="submit" class="btn">Arvuta!</button>
+              </p>
+            </form>
+            <br>
+            <p>Teie võit kokku: €</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
+</div>
+
   <div class="col s12"><canvas class="center-align" id="myChart" width="1200" height="500"></canvas></div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-  <script src="chart.js"></script>
   <script src="main.js"></script>
-
+  <script src="sample.js"></script>
+  <script src="chart.js"></script>
 </body>
 </html>
