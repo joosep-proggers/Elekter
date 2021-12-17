@@ -1,12 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="592f4fc4-1688-4b3d-bb35-30c010404d26" name="Changes" comment="Teine vahehindamine">
+    <list default="true" id="592f4fc4-1688-4b3d-bb35-30c010404d26" name="Changes" comment="Design complete, starting on back-end">
+      <change afterPath="$PROJECT_DIR$/dropdown.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/input.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chart.js" beforeDir="false" afterPath="$PROJECT_DIR$/chart.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/datagetter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/enlife.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/next.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/xhr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/main.js" afterDir="false" />
     </list>
-    <list id="ce6f47eb-5f90-46b3-9ef3-0a1dfe6aaa76" name="Changes by user" comment="Teine Vahehindamine">
+    <list id="ce6f47eb-5f90-46b3-9ef3-0a1dfe6aaa76" name="Changes by user" comment="design complete, starting on back-end">
       <change beforePath="$PROJECT_DIR$/chart.js" beforeDir="false" afterPath="$PROJECT_DIR$/chart.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,11 +44,39 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/main.js" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/chart.js">
+      <ranges>
+        <range start1="1" end1="3" start2="1" end2="1" changelist="592f4fc4-1688-4b3d-bb35-30c010404d26" />
+        <range start1="6" end1="7" start2="4" end2="37" changelist="592f4fc4-1688-4b3d-bb35-30c010404d26" />
+        <range start1="8" end1="10" start2="38" end2="63" changelist="ce6f47eb-5f90-46b3-9ef3-0a1dfe6aaa76" />
+        <range start1="11" end1="13" start2="64" end2="64" changelist="592f4fc4-1688-4b3d-bb35-30c010404d26" />
+        <range start1="22" end1="25" start2="73" end2="73" changelist="592f4fc4-1688-4b3d-bb35-30c010404d26" />
+        <range start1="26" end1="26" start2="74" end2="75" changelist="592f4fc4-1688-4b3d-bb35-30c010404d26" />
+        <range start1="27" end1="28" start2="76" end2="76" changelist="ce6f47eb-5f90-46b3-9ef3-0a1dfe6aaa76" />
+        <range start1="34" end1="37" start2="82" end2="83" changelist="592f4fc4-1688-4b3d-bb35-30c010404d26" />
+        <range start1="39" end1="39" start2="85" end2="86" changelist="ce6f47eb-5f90-46b3-9ef3-0a1dfe6aaa76" />
+        <range start1="46" end1="47" start2="93" end2="93" changelist="592f4fc4-1688-4b3d-bb35-30c010404d26" />
+        <range start1="48" end1="49" start2="94" end2="94" changelist="ce6f47eb-5f90-46b3-9ef3-0a1dfe6aaa76" />
+        <range start1="53" end1="53" start2="98" end2="99" changelist="ce6f47eb-5f90-46b3-9ef3-0a1dfe6aaa76" />
+        <range start1="56" end1="57" start2="102" end2="102" changelist="592f4fc4-1688-4b3d-bb35-30c010404d26" />
+        <range start1="63" end1="64" start2="108" end2="109" changelist="592f4fc4-1688-4b3d-bb35-30c010404d26" />
+        <range start1="67" end1="68" start2="112" end2="114" changelist="592f4fc4-1688-4b3d-bb35-30c010404d26" />
+        <range start1="69" end1="70" start2="115" end2="115" changelist="592f4fc4-1688-4b3d-bb35-30c010404d26" />
+        <range start1="73" end1="74" start2="118" end2="120" changelist="592f4fc4-1688-4b3d-bb35-30c010404d26" />
+        <range start1="76" end1="77" start2="122" end2="122" changelist="592f4fc4-1688-4b3d-bb35-30c010404d26" />
+        <range start1="79" end1="80" start2="124" end2="126" changelist="592f4fc4-1688-4b3d-bb35-30c010404d26" />
+      </ranges>
+    </file>
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="ProjectErrors" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="22KLZwA6ITXFITvz8SQp3IVHFAQ" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -70,7 +109,7 @@
       <updated>1639581394946</updated>
       <workItem from="1639581401321" duration="2840000" />
       <workItem from="1639636866320" duration="15080000" />
-      <workItem from="1639654943890" duration="9961000" />
+      <workItem from="1639654943890" duration="49362000" />
     </task>
     <task id="LOCAL-00001" summary="Esimene vahehindamine">
       <created>1639655984906</created>
@@ -93,7 +132,21 @@
       <option name="project" value="LOCAL" />
       <updated>1639670162417</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Design complete, starting on back-end">
+      <created>1639674335410</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1639674335411</updated>
+    </task>
+    <task id="LOCAL-00005" summary="design complete, starting on back-end">
+      <created>1639674368156</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1639674368156</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -115,6 +168,8 @@
     <MESSAGE value="Changes by user" />
     <MESSAGE value="Teine vahehindamine" />
     <MESSAGE value="Teine Vahehindamine" />
-    <option name="LAST_COMMIT_MESSAGE" value="Teine Vahehindamine" />
+    <MESSAGE value="Design complete, starting on back-end" />
+    <MESSAGE value="design complete, starting on back-end" />
+    <option name="LAST_COMMIT_MESSAGE" value="design complete, starting on back-end" />
   </component>
 </project>
