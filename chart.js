@@ -36,8 +36,31 @@ let apiData1 = apiFetchPrice(tänaneKuupäevAPIsse, homneKuupäevAPIsse).then(ap
 
 // Graafikule jooksvad andmed
 let arr_backgroundColor = []
-let arr_data = [15.64,108.44,107.65,106.09,16.91,80.08,166.62,226.32,174.91,150.81,195.6,186.02,137.65,133.16,180.09,176.28,166.47,180.09,180.26,144.69,128.65,119.02,102.93,65.07]
-let avg_price = 135.39
+let arr_data = [19.36,
+    19.06,
+    19.15,
+    18.79,
+    21.10,
+    70,
+    176.86,
+    180.44,
+    196.89,
+    200.03,
+    199.84,
+    200.02,
+    195.04,
+    191.94,
+    204.02,
+    244.93,
+    280.22,
+    274.02,
+    208.78,
+    186.42,
+    165.07,
+    164.82,
+    146.30,
+    160.08]
+let avg_price = 155.96
 let peak = Math.max.apply(null, arr_data)
 
 for (let i = 0; i < arr_data.length; i++) {
@@ -51,7 +74,6 @@ for (let i = 0; i < arr_data.length; i++) {
 
 // Graafik
 const myChart = new Chart(ctx, {
-
     label: 'Elektrihind Tunni Kohta',
     data: avg_price,
     type: 'bar',
@@ -61,6 +83,7 @@ const myChart = new Chart(ctx, {
         color: 'rgba(0,255,0, 1)',
         datasets: [{
 
+            // Sirge, mis näitab graafikul päeva keskmist elektrimaksumust
             type: 'line',
             label: 'Päeva keskmine EUR/MWh',
             data: [avg_price, avg_price,avg_price, avg_price,avg_price, avg_price,avg_price, avg_price,avg_price, avg_price,avg_price, avg_price,avg_price, avg_price,avg_price, avg_price,avg_price, avg_price,avg_price, avg_price,avg_price, avg_price,avg_price, avg_price],
@@ -69,11 +92,11 @@ const myChart = new Chart(ctx, {
             type: 'bar',
             label: 'Tunni maksumus EUR/MWh',
             data: arr_data,
-            // TODO: Võta keskmine hind ja võrrelda seda uue hinnaga KUI uus hind on keskmisest hinnast hinnast soodsam, siis on uus hind rohelist värvi muidu punast.
             backgroundColor: arr_backgroundColor,
             borderWidth: 4
         }]
     },
+    // Graafiku välimus
     options: {
         maintainAspectRatio: false,
         responsive: false,

@@ -1,147 +1,75 @@
-<!doctype html>
 <html lang="et">
 <head>
   <meta charset="utf-8">
-  <title>Elektrisemu</title>
-  <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.6.2/chart.min.js" integrity="sha512-tMabqarPtykgDtdtSqCL3uLVM0gS1ZkUAVhRFu1vSEFgvB73niFQWJuvviDyBGBH22Lcau4rHB5p2K2T0Xvr6Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <meta name="theme-color" content="#fafafa">
   <link rel="stylesheet" href="style.css">
+  <title>Elektrisemu</title>
 </head>
-</head>
-<body class="white white-text">
+
+<body>
 <div class="row">
   <div class="col s3 offset-s1 left-align">
-    <h1><b>137.65€/MWh</b></h1>
+    <h1 id="hetke_hind"></h1>
     <h5>Elektrihind praegusel momendil</h5>
   </div>
+  <span class="col s3 offset-s5 right-align" id="clock"></span>
   <div class="col s3 offset-s4 right-align">
-    <h1><b>15.65€/MWh</b></h1>
-    <h5>Kõige odavam elektrihind täna</h5>
-    <h5>Kell:</h5>
+    <h1 id="keskmine_hind">0.155€/kWh</h1>
+    <h5>Tänane keskmine elektrihind</h5>
+  </div>
+  <div class="col s4 offset-s4 center-align">
+    <i class="fa fa-question-circle fa-2x" title="Veebileht on loodud mugavaks elektrihindade nägemiseks ning andmete võrdlemiseks. Kellaajad on kuvatud tunniajaste intervallidena. Säästetud summa võrdub sellega, kui kasutaksite oma seadet kogu tunni. Arvutus võrdleb hetkel olevat elektrihinda kasutaja valitud hinnaga."></i>
   </div>
 </div>
-
+</div>
 <div id="kodumasinad">
   <div class="row">
-    <div class="col s2">
+    <div class="col s4 offset-s4">
       <div class="card kaart">
-        <div class="card-content white-text">
-          <span class="card-title center-align"><b>Ventilaator</b></span>
-          <div>
-            <form action="#">
-              <p>
-                <label for="Kestvus">kestvusaeg (minutites)</label>
-                <input id="kestvus" class="white-text"></input>
-                <button>Arvuta!</button>
-              </p>
-            </form>
-            <br>
-            <p>Teie võit kokku: €</p>
+        <div class="card-content">
+          <span class="card-title"><h4><b>Kokkuhoiu arvutamine</b></h4></span>
+          <div class='dropdown center'>
+            <div class='title pointerCursor' id="dropvalue" onchange="multichange()">Vali seade<i class="fa fa-angle-right"></i></div>
+            <div class='menu pointerCursor hide'>
+              <div class='option' id='option1'>ventilaator</div>
+              <div class='option' id='option2'>boiler</div>
+              <div class='option' id='option3'>radiaator</div>
+              <div class='option' id='option4'>veekeetja</div>
+              <div class='option' id='option5'>ahi</div>
+              <div class='option' id='option6'>pesumasin</div>
+            </div>
           </div>
-        </div>
-      </div>
-    </div>
-    <div class="col s2">
-      <div class="card kaart">
-        <div class="card-content white-text">
-          <span class="card-title center-align"><b>Boiler</b></span>
-          <div>
-            <form action="#">
-              <p>
-                <label for="Kestvus">kestvusaeg (minutites)</label>
-                <input id="kestvus" class="white-text"></input>
-                <button>Arvuta!</button>
-              </p>
-            </form>
-            <br>
-            <p>Teie võit kokku: €</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col s2">
-      <div class="card kaart">
-        <div class="card-content white-text">
-          <span class="card-title center-align"><b>Radiaator</b></span>
-          <div>
-            <form action="#">
-              <p>
-                <label for="Kestvus">kestvusaeg (minutites)</label>
-                <input id="kestvus" class="white-text"></input>
-                <button>Arvuta!</button>
-              </p>
-            </form>
-            <br>
-            <p>Teie võit kokku: €</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col s2">
-      <div class="card kaart">
-        <div class="card-content white-text">
-          <span class="card-title center-align"><b>Veekeetja</b></span>
-          <div>
-            <form action="#">
-              <p>
-                <label for="Kestvus">kestvusaeg (minutites)</label>
-                <input id="kestvus" class="white-text"></input>
-                <button>Arvuta!</button>
-              </p>
-            </form>
-            <br>
-            <p>Teie võit kokku: €</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col s2">
-      <div class="card kaart">
-        <div class="card-content white-text">
-          <span class="card-title center-align"><b>Ahi</b></span>
-          <div>
-            <form action="#">
-              <p>
-                <label for="Kestvus">kestvusaeg (minutites)</label>
-                <input id="kestvus" class="white-text"></input>
-                <button>Arvuta!</button>
-              </p>
-            </form>
-            <br>
-            <p>Teie võit kokku: €</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col s2">
-      <div class="card kaart">
-        <div class="card-content white-text">
-          <span class="card-title center-align"><b>Pesumasin</b></span>
-          <div>
-            <form action="#">
-              <p>
-                <label for="Kestvus">kestvusaeg (minutites)</label>
-                <input id="kestvus" class="white-text"></input>
-                <button>Arvuta!</button>
-              </p>
-            </form>
-            <br>
-            <p>Teie võit kokku: €</p>
-          </div>
+          <br>
+          <p class="center">Libistage liugurit, et valida, millist kellaajaga võrdlete praegust kellaaega</p>
+          <input type="range" min="0" max="100" value="15" id="range" onchange="summation()">
+          <br>
+          <h4 class="center" id="arvuTulemus">Teie kokkuhoid eurodes</h4>
         </div>
       </div>
     </div>
   </div>
 </div>
+</div>
+<br>
+<h3 class="center"><b>Tänased elektrihinnad</b></h3>
+<div class="row">
+  <div class="col s4 offset-s4">
+    <p><i class="fa fa-square fa-2x green-color"></i> - Elektritarbimine on keskmisest odavam</p>
+  </div>
+  <div class="col s4 offset-s4">
+    <p><i class="fa fa-square fa-2x red-color"></i> - Suures koguses elektritarbimine pole soovituslik (keskmisest kallim)</p>
+  </div>
+</div>
+<div class="col s12"><canvas class="center-align" id="myChart" width="1200" height="500"></canvas></div>
 
-  <div class="col s12"><canvas class="center-align" id="myChart" width="1200" height="500"></canvas></div>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-  <script src="main.js"></script>
-  <script src="sample.js"></script>
-  <script src="chart.js"></script>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.6.2/chart.min.js" integrity="sha512-tMabqarPtykgDtdtSqCL3uLVM0gS1ZkUAVhRFu1vSEFgvB73niFQWJuvviDyBGBH22Lcau4rHB5p2K2T0Xvr6Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="main.js"></script>
+<script src="chart.js"></script>
+<script src="input.js"></script>
+<script src="dropdown.js"></script>
 </body>
 </html>
