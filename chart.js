@@ -11,10 +11,10 @@ homneKuupäev = new Date()
 homneKuupäev.setDate(homneKuupäev.getDate() + 1)
 homneKuupäevAPIsse = homneKuupäev.getFullYear() + '-' + kuu + '-' + homneKuupäev.getDate()
 
-/*
+
 // SIIN OLI ÕLEKÕRT VAJA!! (seda me ei saanud)
 // APIst info otse chartile
-
+/*
 async function apiFetchPrice(algTimeStamp, lõppTimeStamp)
 {
     let päevHinnad = [];
@@ -27,12 +27,13 @@ async function apiFetchPrice(algTimeStamp, lõppTimeStamp)
     console.log(päevHinnad)
     return await Promise.resolve(päevHinnad)
 }
-
+*/
 
 //let apiData1 = await apiFetchPrice(tänaneKuupäevAPIsse, homneKuupäevAPIsse).then(apiData => console.log('PROMISE: ' + apiData1));
-//let apiData1 = apiFetchPrice(tänaneKuupäev, homneKuupäevAPIsse)
-let apiData1 = apiFetchPrice(tänaneKuupäevAPIsse, homneKuupäevAPIsse).then(apiData => console.log('PROMISE: ' + apiData1));
-*/
+let apiData1 = apiFetchPrice(tänaneKuupäev, homneKuupäevAPIsse)
+apiData1.then(apiFetchPrice(tänaneKuupäevAPIsse, homneKuupäevAPIsse).then(apiData1 => {apiData1}));
+console.log(apiData1);
+
 
 // Graafikule jooksvad andmed
 let arr_backgroundColor = []

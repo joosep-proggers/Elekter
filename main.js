@@ -94,7 +94,6 @@ function summation(){
     Element.innerHTML = "Sääst: " + vaheArvutus((multiplier/1000000), tunnijada[0], tunnijada[document.getElementById("range").value]) + "€"
 }
 
-
 function multichange() {
     var multi1  = document.getElementById("dropvalue")
     console.log(multi1.innerText)
