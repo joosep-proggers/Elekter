@@ -16,7 +16,7 @@
   </div>
   <span class="col s3 offset-s5 right-align" id="clock"></span>
   <div class="col s3 offset-s4 right-align">
-    <h1 id="keskmine_hind">0.155€/kWh</h1>
+    <h1 id="keskmine_hind"></h1>
     <h5>Tänane keskmine elektrihind</h5>
   </div>
   <div class="col s4 offset-s4 center-align">
@@ -33,16 +33,22 @@
           <div class='dropdown center'>
             <div class='title pointerCursor' id="dropvalue" onchange="multichange()">Vali seade<i class="fa fa-angle-right"></i></div>
             <div class='menu pointerCursor hide'>
+              <hr>
               <div class='option' id='option1'>ventilaator</div>
+              <hr>
               <div class='option' id='option2'>boiler</div>
+              <hr>
               <div class='option' id='option3'>radiaator</div>
+              <hr>
               <div class='option' id='option4'>veekeetja</div>
+              <hr>
               <div class='option' id='option5'>ahi</div>
+              <hr>
               <div class='option' id='option6'>pesumasin</div>
             </div>
           </div>
           <br>
-          <p class="center">Libistage liugurit, et valida, millist kellaajaga võrdlete praegust kellaaega</p>
+          <p class="center">Libistage liugurit, et valida, millist kellaaega võrdlete praeguse ajaga</p>
           <input type="range" min="0" max="100" value="15" id="range" onchange="summation()">
           <br>
           <h4 class="center" id="arvuTulemus">Teie kokkuhoid eurodes</h4>

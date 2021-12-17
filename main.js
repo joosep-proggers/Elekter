@@ -49,6 +49,12 @@ homneKuupäevAPIsse = homneKuupäev.getFullYear() + '-' + kuu + '-' + homneKuup�
 function drawUI( data ) {
     praeguneTund = tänaneKuupäev.getHours()
     hetkeHind.innerHTML = (data[praeguneTund].price / 1000.).toFixed(3) + "€/kWh"
+    keskmine = 0
+    for(var i = 0; i < data.length; i++){
+        keskmine = keskmine + data[i].price
+    }
+    keskmine = keskmine / data.length
+    keskmineHind.innerHTML = (keskmine/1000).toFixed(3) + "€/kWh"
 }
 
 
